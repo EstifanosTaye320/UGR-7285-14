@@ -43,10 +43,12 @@
 }
 
 .profile-picture {
+  border: 1px solid black;
   width: 200px;
 }
 
 .some-images {
+  border: 1px solid black;
   width: 400px;
 }
 
@@ -139,5 +141,5 @@
 }
 
 #google-maps > img {
-  width: 210px;
+  width: 205px;
 }
