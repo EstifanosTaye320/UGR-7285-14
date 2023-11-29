@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="../style_sheets/flex box/styles.css" />
   </head>
-  <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
+
+  <body class="flex-container">
+    <header class="flex-container screen-size">
+      <hgroup class="flex-container closer">
+        <h1 class="closer" id="my-logo">
+          <img src="./image/E-icon.jpg" alt="E-Logo" class="sizerated-logo" />
+        </h1>
         <p>Estifanos Taye</p>
       </hgroup>
 
-      <ul>
+      <ul id="main-nav">
         <li><a href="./home.html">Home</a></li>
         <li><a href="./profile.html">Profile</a></li>
         <li><a href="./portfolio.html">Portfolio</a></li>
@@ -21,10 +25,10 @@
       </ul>
     </header>
 
-    <main>
-      <h1>Portfolio</h1>
-      <section>
-        <h2>Sorting</h2>
+    <main class="flex-container screen-size">
+      <h1 class="closer">Portfolio</h1>
+      <section class="flex-container screen-size" id="sorting">
+        <h2 class="center-title">Sorting</h2>
         <label><input type="radio" name="sort" value="name" />By Name</label>
         <label
           ><input type="radio" name="sort" value="favorite" />By Favorite</label
@@ -34,56 +38,77 @@
 
       <section id="projects">
         <h2>Projects</h2>
-        <article>
+        <article class="flex-container">
           <h3>Calculator</h3>
-          <img src="./image/Calculator.jpg" alt="Calculator Image" />
+          <img
+            src="./image/Calculator.jpg"
+            alt="Calculator Image"
+            class="some-images"
+          />
           <p>
             I have built a calculater using all of the programming languages I
             have learned so far (python, java, JavaScript, C#, and C++)
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Slider</h3>
-          <img src="./image/Slider.jpg" alt="Slider number range image" />
+          <img
+            src="./image/Slider.jpg"
+            alt="Slider number range image"
+            class="some-images"
+          />
           <p>
             I have made this project in java script to help me grasp the use of
             the output tag in html
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>DataBase Research</h3>
-          <img src="./image/database.jpg" alt="Database Image" />
+          <img
+            src="./image/database.jpg"
+            alt="Database Image"
+            class="some-images"
+          />
           <p>
             This was a project I did for my networking course in my 2nd year
             education in AAiT
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Madlibs Game</h3>
-          <img src="./image/madlibs.jpg" alt="madlibs game image" />
+          <img
+            src="./image/madlibs.jpg"
+            alt="madlibs game image"
+            class="some-images"
+          />
           <p>
             This is like a kick of project for game programming which I have
             taken an interest in
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Pong Game</h3>
-          <img src="./image/pong.png" alt="Pong game image" />
+          <img
+            src="./image/pong.png"
+            alt="Pong game image"
+            class="some-images"
+          />
           <p>
             This is a project I made in python to introduce me to the turtle
             package for game programming in python
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Rock Paper Scissors Game</h3>
           <img
             src="./image/rock-paper-scissors.png"
             alt="rock-paper-scissors game image"
+            class="some-images"
           />
           <p>
             This was a project I worked on when I was learing how to use html,
@@ -91,54 +116,78 @@
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Snake Game</h3>
-          <img src="./image/Snake.jpg" alt="Snake Game image" />
+          <img
+            src="./image/Snake.jpg"
+            alt="Snake Game image"
+            class="some-images"
+          />
           <p>
             This was a project I made to help me take on game programming in
             python using the pygame library
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Tic Tac Toe Game</h3>
-          <img src="./image/tic-tac-toe.png" alt="Tic Tac Toe Game image" />
+          <img
+            src="./image/tic-tac-toe.png"
+            alt="Tic Tac Toe Game image"
+            class="some-images"
+          />
           <p>
             This was one of the projects I used to learn how to use html, css
             and JavaScript together
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Robot Programming</h3>
-          <img src="./image/robot-programming.jpg" alt="robot programming" />
+          <img
+            src="./image/robot-programming.jpg"
+            alt="robot programming"
+            class="some-images"
+          />
           <p>
             The objective of this project was to make a NAO Robot read out some
             Ethiopian stories to children
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Slot machine using JavaScript</h3>
           <p>
             This project was made in an effert to learn some thing about
             programming in JavaScript
           </p>
-          <img src="./image/slot-machine.jpg" alt="slot-machine" />
+          <img
+            src="./image/slot-machine.jpg"
+            alt="slot-machine"
+            class="some-images"
+          />
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Encryption software</h3>
-          <img src="./image/encryption.jpg" alt="Encryption process" />
+          <img
+            src="./image/encryption.jpg"
+            alt="Encryption process"
+            class="some-images"
+          />
           <p>
             This was done in my data structure course at the end of the 2nd year
             of my education at AAiT of Addis Ababa
           </p>
         </article>
 
-        <article>
+        <article class="flex-container">
           <h3>Gen AI A2SV</h3>
-          <img src="./image/A2SV-logo.jpg" alt="A2SV logo" />
+          <img
+            src="./image/A2SV-logo.jpg"
+            alt="A2SV logo"
+            class="some-images"
+          />
           <p>
             Here was a project the required the use of an AI to generate code
             for an educational application that was agreed upon by my team
@@ -147,8 +196,8 @@
       </section>
 
       <section>
-        <h2>Means of selection</h2>
-        <ul>
+        <h2 class="center-title">Means of selection</h2>
+        <ul class="flex-container screen-size" id="selection">
           <li><input type="radio" name="select" value="Games" />Games</li>
           <li><input type="radio" name="select" value="Math" />Math</li>
           <li><input type="radio" name="select" value="Physics" />Physics</li>
@@ -162,46 +211,53 @@
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="flex-container screen-size">
+      <section class="flex-container" id="contact-me">
         <h2>Contact me</h2>
-        <nav>
+        <nav id="some-sites">
           <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
+            ><img src="./image/telegram.png" alt="telegram" class="Normal-logo"
           /></a>
           <a
             href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
+            ><img src="./image/linkedin.png" alt="linkedin" class="Normal-logo"
           /></a>
           <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
+            ><img src="./image/lemlem.jpg" alt="lemlem" class="Normal-logo"
           /></a>
           <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
+            ><img src="./image/github.png" alt="GitHub" class="Normal-logo"
           /></a>
           <a
             href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
+            ><img src="./image/figma.jpg" alt="figma" class="Normal-logo"
           /></a>
           <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
+            ><img src="./image/discord.jpg" alt="discord" class="Normal-logo"
           /></a>
         </nav>
       </section>
 
-      <section>
+      <section class="flex-container">
         <h2>About me</h2>
-        <p>
+        <p class="text-item">
           My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
+          Addis Abeba University.
+        </p>
+        <p class="text-item">
+          My hobbies include solving problems on programming sites like
+          leetcode, hackerrank, and codeforces....
         </p>
         <a href="./profile.html">Show More >></a>
       </section>
 
-      <section>
+      <section class="flex-container">
         <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
+        <img
+          src="./image/image-icon.png"
+          alt="Profile picture"
+          class="profile-picture"
+        />
         <ul>
           <li>
             Email:

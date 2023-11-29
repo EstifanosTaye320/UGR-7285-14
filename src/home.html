@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="../style_sheets/flex box/styles.css" />
   </head>
-  <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
+
+  <body class="flex-container">
+    <header class="flex-container screen-size">
+      <hgroup class="flex-container closer">
+        <h1 class="closer" id="my-logo">
+          <img src="./image/E-icon.jpg" alt="E-Logo" class="sizerated-logo" />
+        </h1>
         <p>Estifanos Taye</p>
       </hgroup>
 
-      <ul>
+      <ul id="main-nav">
         <li><a href="./home.html">Home</a></li>
         <li><a href="./profile.html">Profile</a></li>
         <li><a href="./portfolio.html">Portfolio</a></li>
@@ -21,16 +25,17 @@
       </ul>
     </header>
 
-    <main>
-      <h1>About me</h1>
-      <section>
+    <main class="flex-container screen-size">
+      <h1 class="closer">About me</h1>
+      <section class="flex-container screen-size">
         <h2>My Hobbies</h2>
 
-        <article>
+        <article class="flex-container screen-size">
           <h3>Codeing projects</h3>
           <img
             src="./image/Programming-a-project.jpg"
             alt="programming picture"
+            class="some-images"
           />
           <p>
             This is what I do when I have free time at home I come up with some
@@ -39,18 +44,26 @@
           </p>
         </article>
 
-        <article>
+        <article class="flex-container screen-size">
           <h3>Playing logic games</h3>
-          <img src="./image/logic-games.jpg" alt="running brain" />
+          <img
+            src="./image/logic-games.jpg"
+            alt="running brain"
+            class="some-images"
+          />
           <p>
             This is an activity reserved for when the light is out at the house
             or when it is lunch time at school and I have nothing better to do.
           </p>
         </article>
 
-        <article>
+        <article class="flex-container screen-size">
           <h3>Playing video games</h3>
-          <img src="./image/video-games.jpg" alt="running brain" />
+          <img
+            src="./image/video-games.jpg"
+            alt="running brain"
+            class="some-images"
+          />
           <p>
             When I have the time I try some video games to see how they work and
             what types of things are possible to do now a days.
@@ -60,31 +73,45 @@
         <a href="./profile.html#Hobbies">More >></a>
       </section>
 
-      <section>
-        <h2>My Best Projects</h2>
+      <section class="flex-container screen-size">
+        <h2 class="closer">My Best Projects</h2>
         <h3>High School</h3>
 
-        <article>
-          <h4>Electrical circute project (Physics Club)</h4>
+        <article class="flex-container screen-size">
+          <h4 class="closer">Electrical circute project (Physics Club)</h4>
           <p>
             This project started small and built up to a more complex project,
             designs of the project can be more or less illustrated as in the
             following images:
           </p>
-          <figure>
-            <img src="./image/circute-diagram.jpg" alt="Simple Circute" />
-            <figcaption>
-              Depiction of the starting point of the project
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="./image/complex-circute.jpg" alt="Complex circute" />
-            <figcaption>Depiction of the end of the project</figcaption>
-          </figure>
+          <div class="flex-container">
+            <figure>
+              <img
+                src="./image/circute-diagram.jpg"
+                alt="Simple Circute"
+                class="some-images"
+              />
+              <figcaption>
+                Depiction of the starting point of the project
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./image/complex-circute.jpg"
+                alt="Complex circute"
+                class="some-images"
+              />
+              <figcaption>Depiction of the end of the project</figcaption>
+            </figure>
+          </div>
 
-          <article>
+          <article class="flex-container screen-size">
             <h4>Research for Geography club</h4>
-            <img src="./image/volcano.jpg" alt="volcano-image" />
+            <img
+              src="./image/volcano.jpg"
+              alt="volcano-image"
+              class="some-images"
+            />
             <p>
               The research I was instructed to do was on the behaviour of
               volcanos, types of volcanos and some of the after effects of a
@@ -93,37 +120,53 @@
           </article>
 
           <h3>Free Time</h3>
-          <article>
+          <article class="flex-container screen-size">
             <h4>Robot Programming</h4>
-            <img src="./image/robot-programming.jpg" alt="robot programming" />
+            <img
+              src="./image/robot-programming.jpg"
+              alt="robot programming"
+              class="some-images"
+            />
             <p>
               The objective of this project was to make a NAO Robot read out
               some Ethiopian stories to children
             </p>
           </article>
 
-          <article>
-            <h4>Slot machine using JavaScript</h4>
+          <article class="flex-container screen-size">
+            <h4 class="closer">Slot machine using JavaScript</h4>
             <p>
               This project was made in an effert to learn some thing about
               programming in JavaScript
             </p>
-            <img src="./image/slot-machine.jpg" alt="slot-machine" />
+            <img
+              src="./image/slot-machine.jpg"
+              alt="slot-machine"
+              class="some-images"
+            />
           </article>
 
           <h3>At Collage</h3>
-          <article>
+          <article class="flex-container screen-size">
             <h4>Encryption software</h4>
-            <img src="./image/encryption.jpg" alt="Encryption process" />
+            <img
+              src="./image/encryption.jpg"
+              alt="Encryption process"
+              class="some-images"
+            />
             <p>
               This was done in my data structure course at the end of the 2nd
               year of my education at AAiT of Addis Ababa
             </p>
           </article>
 
-          <article>
+          <article class="flex-container screen-size">
             <h4>Gen AI A2SV</h4>
-            <img src="./image/A2SV-logo.jpg" alt="A2SV logo" />
+            <img
+              src="./image/A2SV-logo.jpg"
+              alt="A2SV logo"
+              class="some-images"
+            />
             <p>
               Here was a project the required the use of an AI to generate code
               for an educational application that was agreed upon by my team
@@ -134,46 +177,53 @@
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="flex-container screen-size">
+      <section class="flex-container" id="contact-me">
         <h2>Contact me</h2>
-        <nav>
+        <nav id="some-sites">
           <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
+            ><img src="./image/telegram.png" alt="telegram" class="Normal-logo"
           /></a>
           <a
             href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
+            ><img src="./image/linkedin.png" alt="linkedin" class="Normal-logo"
           /></a>
           <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
+            ><img src="./image/lemlem.jpg" alt="lemlem" class="Normal-logo"
           /></a>
           <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
+            ><img src="./image/github.png" alt="GitHub" class="Normal-logo"
           /></a>
           <a
             href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
+            ><img src="./image/figma.jpg" alt="figma" class="Normal-logo"
           /></a>
           <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
+            ><img src="./image/discord.jpg" alt="discord" class="Normal-logo"
           /></a>
         </nav>
       </section>
 
-      <section>
+      <section class="flex-container">
         <h2>About me</h2>
-        <p>
+        <p class="text-item">
           My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
+          Addis Abeba University.
+        </p>
+        <p class="text-item">
+          My hobbies include solving problems on programming sites like
+          leetcode, hackerrank, and codeforces....
         </p>
         <a href="./profile.html">Show More >></a>
       </section>
 
-      <section>
+      <section class="flex-container">
         <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
+        <img
+          src="./image/image-icon.png"
+          alt="Profile picture"
+          class="profile-picture"
+        />
         <ul>
           <li>
             Email:
