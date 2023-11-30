@@ -1,0 +1,126 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  justify-items: center;
+  align-items: start;
+}
+
+.two-to-one {
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.three-to-one {
+  grid-template-columns: 1fr;
+}
+
+.closer {
+  margin-bottom: -15px;
+}
+
+.screen-size {
+  width: 500px;
+}
+
+.titles {
+  justify-items: start;
+  justify-content: start;
+}
+
+.site-card {
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.sizerated-logo,
+.Normal-logo {
+  border: 1px solid blue;
+  border-radius: 100%;
+  width: 100px;
+}
+
+.Normal-logo {
+  width: 75px;
+}
+
+.text-item {
+  text-align: start;
+  margin-top: 0px;
+}
+
+.site-text {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 200px;
+}
+
+.some-images {
+  width: 400px;
+}
+
+.center-title {
+  justify-items: center;
+  justify-content: start;
+}
+
+.put-center {
+  justify-content: center;
+  justify-items: start;
+}
+
+.image-cluster {
+  gap: 5px;
+}
+
+.image-cluster > img {
+  border: 1px solid black;
+}
+
+/* Portfolio */
+
+#sorting {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#selection {
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 15px;
+}
+
+#main-nav {
+  padding-left: 0px;
+  padding-right: 0px;
+  list-style-type: none;
+  width: 300px;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr) 2fr 1fr;
+}
+
+#main-nav > li {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  border: 1px solid black;
+  height: 25px;
+}
+
+#some-sites {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#some-sites {
+  width: 250px;
+}
+
+#google-maps {
+  grid-template-columns: 1fr 1fr;
+}
+
+#google-maps > img {
+  width: 210px;
+  border: 1px solid black;
+}

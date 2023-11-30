@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
+    <header class="grid-container screen-size two-to-one">
+      <hgroup class="closer">
+        <h1 class="closer" id="my-logo">
+          <img src="./image/E-icon.jpg" alt="E-Logo" class="sizerated-logo" />
+        </h1>
         <p>Estifanos Taye</p>
       </hgroup>
 
-      <ul>
+      <ul class="grid-container" id="main-nav">
         <li><a href="./home.html">Home</a></li>
         <li><a href="./profile.html">Profile</a></li>
         <li><a href="./portfolio.html">Portfolio</a></li>
@@ -21,13 +25,13 @@
       </ul>
     </header>
 
-    <main>
-      <h1>My Profile</h1>
-      <section>
+    <main class="grid-container screen-size">
+      <h1 class="closer">My Profile</h1>
+      <section class="screen-size grid-container">
         <h2>My Story</h2>
 
-        <article>
-          <h3>Education History</h3>
+        <article class="grid-container image-cluster">
+          <h3 class="titles screen-size">Education History</h3>
           <p>
             I took my education in Lemlem School of Addis Abeba starting form
             KG1 - 12th grade, here I Participated in some clubs namely Civics
@@ -39,7 +43,7 @@
             record information about the names and use of devices used by
             Ethiopian technicians
           </p>
-          <img src="./image/lemlem.jpg" alt="" />
+          <img src="./image/lemlem.jpg" alt="lemlem-logo" class="some-images" />
           <p>Some important skills that I have gained:</p>
           <ul>
             <li>How to construct a circuit</li>
@@ -51,7 +55,11 @@
             <li>How to do quick math and solve problems and</li>
             <li>How to communicate to group members</li>
           </ul>
-          <img src="./image/aau-title.jpg" alt="AAU Image" />
+          <img
+            src="./image/aau-title.jpg"
+            alt="AAU Image"
+            class="some-images"
+          />
           <p>
             AAiT of Addis Ababa is where I'm now currently undertaking my
             collage education, I am no a 3rd year student of software
@@ -83,8 +91,8 @@
           </ul>
         </article>
 
-        <article>
-          <h3 id="Hobbies">My Hobbies</h3>
+        <article class="">
+          <h3 class="titles" id="Hobbies">My Hobbies</h3>
           <dl>
             <dt>Programming personal projects</dt>
             <dd>
@@ -160,11 +168,11 @@
         </article>
       </section>
 
-      <section>
+      <section class="grid-container">
         <h2>Achivments</h2>
-        <article>
+        <article class="image-cluster">
           <h3>High School(Lemlem)</h3>
-          <img src="./image/lemlem.jpg" alt="High School" />
+          <img src="./image/lemlem.jpg" alt="High School" class="some-images" />
           <ul>
             <li>Certification of exellence for grade 8</li>
             <li>Certification of involvment in mind plus math</li>
@@ -200,9 +208,9 @@
           </ul>
         </article>
 
-        <article>
-          <h3>Collage</h3>
-          <img src="./image/aau-icon.jpg" alt="School" />
+        <article class="grid-container image-cluster">
+          <h3 class="titles screen-size">Collage</h3>
+          <img src="./image/aau-icon.jpg" alt="School" class="some-images" />
           <ul>
             <li>Creation of an encryption software in Java</li>
             <li>Creation of an encryption software in Python</li>
@@ -222,12 +230,18 @@
         </article>
       </section>
 
-      <section>
+      <section class="grid-container">
         <h2>Testimonials</h2>
 
-        <section>
-          <h3>Goethe Institut contact information</h3>
-          <img src="./image/Goethe-Institut-logo.png" alt="logo" />
+        <section class="grid-container">
+          <h3 class="titles screen-size">
+            Goethe Institut contact information
+          </h3>
+          <img
+            src="./image/Goethe-Institut-logo.png"
+            alt="logo"
+            class="profile-picture"
+          />
           <ul>
             <li>
               <address>
@@ -243,9 +257,9 @@
           </ul>
         </section>
 
-        <section>
-          <h3>Project head</h3>
-          <img src="./image/image-icon.png" alt="image" />
+        <section class="screen-size profile-section">
+          <h3 class="titles">Project head</h3>
+          <img src="./image/Yonas.png" alt="image" class="profile-picture" />
           <ul>
             <li>Yonas Tarekegn</li>
             <li>Head of Library and Information Centre</li>
@@ -259,7 +273,10 @@
           </ul>
         </section>
 
-        <blockquote cite="https://www.goethe.de/ins/et/en/ueb.html">
+        <blockquote
+          class="site-text"
+          cite="https://www.goethe.de/ins/et/en/ueb.html"
+        >
           The Goethe-Institut is the Federal Republic of Germany’s cultural
           institute, active worldwide. We promote the study of German abroad and
           encourage international cultural exchange. And This intitute
@@ -273,52 +290,60 @@
             ><img
               src="./image/Goethe-Institut-building.jpg"
               alt="Goethe institut building"
+              class="some-images"
           /></a>
           <figcaption>The image is a link to our website</figcaption>
         </figure>
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="grid-container screen-size three-to-one">
+      <section class="grid-container screen-size">
         <h2>Contact me</h2>
-        <nav>
+        <nav class="grid-container" id="some-sites">
           <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
+            ><img src="./image/telegram.png" alt="telegram" class="Normal-logo"
           /></a>
           <a
             href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
+            ><img src="./image/linkedin.png" alt="linkedin" class="Normal-logo"
           /></a>
           <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
+            ><img src="./image/lemlem.jpg" alt="lemlem" class="Normal-logo"
           /></a>
           <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
+            ><img src="./image/github.png" alt="GitHub" class="Normal-logo"
           /></a>
           <a
             href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
+            ><img src="./image/figma.jpg" alt="figma" class="Normal-logo"
           /></a>
           <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
+            ><img src="./image/discord.jpg" alt="discord" class="Normal-logo"
           /></a>
         </nav>
       </section>
 
-      <section>
+      <section class="grid-container screen-size">
         <h2>About me</h2>
-        <p>
+        <p class="text-item">
           My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
+          Addis Abeba University.
+        </p>
+        <p class="text-item">
+          My hobbies include solving problems on programming sites like
+          leetcode, hackerrank, and codeforces....
         </p>
         <a href="./profile.html">Show More >></a>
       </section>
 
-      <section>
+      <section class="grid-container screen-size image-cluster">
         <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
+        <img
+          src="./image/image-icon.png"
+          alt="Profile picture"
+          class="profile-picture"
+        />
         <ul>
           <li>
             Email:

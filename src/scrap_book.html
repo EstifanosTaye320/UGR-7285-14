@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scrap Book</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
+    <header class="grid-container screen-size two-to-one">
+      <hgroup class="closer">
+        <h1 class="closer" id="my-logo">
+          <img src="./image/E-icon.jpg" alt="E-Logo" class="sizerated-logo" />
+        </h1>
         <p>Estifanos Taye</p>
       </hgroup>
 
-      <ul>
+      <ul class="grid-container" id="main-nav">
         <li><a href="./home.html">Home</a></li>
         <li><a href="./profile.html">Profile</a></li>
         <li><a href="./portfolio.html">Portfolio</a></li>
@@ -21,142 +25,189 @@
       </ul>
     </header>
 
-    <main>
-      <h1>My Scrap Book</h1>
-      <section>
+    <main class="screen-size grid-container">
+      <h1 class="closer">My Scrap Book</h1>
+      <section class="screen-size grid-container">
         <h2>My Collection</h2>
-        <article>
-          <h2>Video Games</h2>
-          <p>Here are some images related to my gameing habbits</p>
-          <figure>
+        <article class="grid-container">
+          <h2 class="titles screen-size">Video Games</h2>
+          <p class="screen-size">
+            Here are some images related to my gameing habbits
+          </p>
+          <figure class="image-cluster grid-container">
             <img
               src="./image/Assassin's-Creed.jpg"
               alt="Assassin's Creed logo"
+              class="some-images"
             />
-            <img src="./image/Dishonered.jpg" alt="Dishonered logo" />
-            <img src="./image/call-of-duty.png" alt="Call of duty logo" />
-            <img src="./image/Skyrim-logo.png" alt="Elder Scrolls 5 logo" />
-            <img src="./image/crysis-logo.jpg" alt="Crysis logo" />
-            <img src="./image/dragon-age-logo.jpg" alt="Dragon Age logo" />
-            <img src="./image/GTA-logo.png" alt="GTA logo" />
-            <figcaption>Some of my most favorite games to play</figcaption>
+            <img
+              src="./image/Dishonered.jpg"
+              alt="Dishonered logo"
+              class="some-images"
+            />
+            <img
+              src="./image/call-of-duty.png"
+              alt="Call of duty logo"
+              class="some-images"
+            />
+            <img
+              src="./image/Skyrim-logo.png"
+              alt="Elder Scrolls 5 logo"
+              class="some-images"
+            />
+            <img
+              src="./image/crysis-logo.jpg"
+              alt="Crysis logo"
+              class="some-images"
+            />
+            <img
+              src="./image/dragon-age-logo.jpg"
+              alt="Dragon Age logo"
+              class="some-images"
+            />
+            <img
+              src="./image/GTA-logo.png"
+              alt="GTA logo"
+              class="some-images"
+            />
+            <figcaption class="site-text">
+              Some of my most favorite games to play
+            </figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Some simple projects</h2>
+        <article class="grid-container screen-size">
+          <h2 class="titles screen-size closer">Some simple projects</h2>
           <figure>
-            <pre>
-              <code>
-                const slotMachine = () => {
-                  const items = ["🍒", "🍊", "🍇", "🍉", "🍋", "🍎"];
-                  const item1 = items[Math.floor(Math.random() * items.length)];
-                  const item2 = items[Math.floor(Math.random() * items.length)];
-                  const item3 = items[Math.floor(Math.random() * items.length)];
-                  console.log(`${item1} | ${item2} | ${item3}`);
-                  if (item1 === item2 && item2 === item3) {
-                    console.log("Congratulations! You won the jackpot!");
-                  } else {
-                    console.log("Sorry, try again.");
-                  }
-                };
-                /* Slot Mechine code for learning JavaSrcipt */
+            <pre class="screen-size">
+              <code class="grid-container">
+const slotMachine = () => {
+  const items = ["🍒", "🍊", "🍇", "🍉", "🍋", "🍎"];
+  const item1 = items
+  [Math.floor(Math.random() * items.length)];
+  const item2 = items
+  [Math.floor(Math.random() * items.length)];
+  const item3 = items
+  [Math.floor(Math.random() * items.length)];
+  console.log(`${item1} | ${item2} | ${item3}`);
+  if (item1 === item2 && item2 === item3) {
+    console.log("Congratulations! You won the jackpot!");
+  } else {
+    console.log("Sorry, try again.");
+  }
+};
+/* Slot Mechine code for learning JavaSrcipt */
+
               </code>
 
-              <code>
-                import heapq
-                from collections import defaultdict
+              <code class="grid-container">
+
+import heapq
+from collections import defaultdict
 
 
-                def huffman_encoding(data):
-                    freq = defaultdict(int)
-                    for char in data:
-                        freq[char] += 1
+def huffman_encoding(data):
+    freq = defaultdict(int)
+    for char in data:
+        freq[char] += 1
 
-                    heap = [[weight, [char, ""]] for char, weight in freq.items()]
-                    heapq.heapify(heap)
+    heap = [[weight, [char, ""]] 
+    for char, weight in freq.items()]
+    heapq.heapify(heap)
 
-                    while len(heap) > 1:
-                        left = heapq.heappop(heap)
-                        right = heapq.heappop(heap)
-                        for pair in left[1:]:
-                            pair[1] = "0" + pair[1]
-                        for pair in right[1:]:
-                            pair[1] = "1" + pair[1]
-                        heapq.heappush(heap, [left[0] + right[0]] + left[1:] + right[1:])
+    while len(heap) > 1:
+        left = heapq.heappop(heap)
+        right = heapq.heappop(heap)
+        for pair in left[1:]:
+            pair[1] = "0" + pair[1]
+        for pair in right[1:]:
+            pair[1] = "1" + pair[1]
+        heapq.heappush(heap, 
+        [left[0] + right[0]] + left[1:] + right[1:])
 
-                    huffman_code = sorted(heapq.heappop(heap)[1:], key=lambda x: (len(x[-1]), x))
-                    return {char: code for char, code in huffman_code}
-
-
-                def huffman_decoding(data, huffman_code):
-                    reverse_mapping = {code: char for char, code in huffman_code.items()}
-                    current_code = ""
-                    decoded_data = ""
-                    for bit in data:
-                        current_code += bit
-                        if current_code in reverse_mapping:
-                            decoded_data += reverse_mapping[current_code]
-                            current_code = ""
-                    return decoded_data
+    huffman_code = sorted
+    (heapq.heappop(heap)[1:], 
+    key=lambda x: (len(x[-1]), x))
+    return {char: code for char, 
+      code in huffman_code}
 
 
-                # Example usage
-                data = "huffman coding is a type of greedy algorithm frequently used for lossless data compression"
-                huffman_code = huffman_encoding(data)
-                encoded_data = "".join([huffman_code[char] for char in data])
-                decoded_data = huffman_decoding(encoded_data, huffman_code)
+def huffman_decoding
+(data, huffman_code):
+    reverse_mapping = {code: char for char, 
+      code in huffman_code.items()}
+    current_code = ""
+    decoded_data = ""
+    for bit in data:
+        current_code += bit
+        if current_code in reverse_mapping:
+            decoded_data += reverse_mapping
+            [current_code]
+            current_code = ""
+    return decoded_data
 
-                print(f"Original data: {data}")
-                print(f"Encoded data: {encoded_data}")
-                print(f"Decoded data: {decoded_data}")
-                """
-                  Huffman coding for learning python data structures
-                """
+
+# Example usage
+data = "huffman coding is a type of greedy 
+algorithm frequently used for lossless data compression"
+huffman_code = huffman_encoding(data)
+encoded_data = "".join
+([huffman_code[char] for char in data])
+decoded_data = huffman_decoding
+(encoded_data, huffman_code)
+
+print(f"Original data: {data}")
+print(f"Encoded data: {encoded_data}")
+print(f"Decoded data: {decoded_data}")
+"""
+  Huffman coding for learning python data structures
+"""
               </code>
-              <code>
-                import heapq
-                from collections import defaultdict
+              <code class="grid-container">
+import heapq
+from collections import defaultdict
 
 
-                def merge_sort(arr):
-                    if len(arr) > 1:
-                        mid = len(arr) // 2
-                        left = arr[:mid]
-                        right = arr[mid:]
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        left = arr[:mid]
+        right = arr[mid:]
 
-                        merge_sort(left)
-                        merge_sort(right)
+        merge_sort(left)
+        merge_sort(right)
 
-                        i = j = k = 0
+        i = j = k = 0
 
-                        while i &lt; len(left) and j &lt; len(right):
-                            if left[i] &lt; right[j]:
-                                arr[k] = left[i]
-                                i += 1
-                            else:
-                                arr[k] = right[j]
-                                j += 1
-                            k += 1
+        while i &lt; len(left) and 
+        j &lt; len(right):
+            if left[i] &lt; right[j]:
+                arr[k] = left[i]
+                i += 1
+            else:
+                arr[k] = right[j]
+                j += 1
+            k += 1
 
-                        while i &lt; len(left):
-                            arr[k] = left[i]
-                            i += 1
-                            k += 1
+        while i &lt; len(left):
+            arr[k] = left[i]
+            i += 1
+            k += 1
 
-                        while j &lt; len(right):
-                            arr[k] = right[j]
-                            j += 1
-                            k += 1
+        while j &lt; len(right):
+            arr[k] = right[j]
+            j += 1
+            k += 1
 
 
-                # Example usage
-                arr = [38, 27, 43, 3, 9, 82, 10]
-                merge_sort(arr)
-                print(arr)
-                """
-                  Merge Sort in python to learn some sorting algorithms in python
-                """
+# Example usage
+arr = [38, 27, 43, 3, 9, 82, 10]
+merge_sort(arr)
+print(arr)
+"""
+  Merge Sort in python to learn some sorting 
+  algorithms in python
+"""
               </code>
             </pre>
             <figcaption>
@@ -165,52 +216,83 @@
           </figure>
         </article>
 
-        <article>
-          <h2>Puzzles and logic Games</h2>
-          <figure>
-            <img src="./image/Matches.png" alt="Matches Phone game" />
-            <img src="./image/Odd-Key.png" alt="Find add key puzzle" />
+        <article class="screen-size">
+          <h2 class="titles">Puzzles and logic Games</h2>
+          <figure class="screen-size image-cluster">
+            <img
+              src="./image/Matches.png"
+              alt="Matches Phone game"
+              class="some-images"
+            />
+            <img
+              src="./image/Odd-Key.png"
+              alt="Find add key puzzle"
+              class="some-images"
+            />
             <img
               src="./image/Amazon-Gameing.jpg"
               alt="Games offered by amazon"
+              class="some-images"
             />
-            <img src="./image/Sudoku.png" alt="Sudoku puzzle" />
-            <img src="./image/diamond-rush.jpg" alt="Diamond rush game" />
-            <img src="./image/Bejeweled.jpg" alt="bejeweled matching game" />
-            <img src="./image/Maze-run.jpg" alt="Maze-run puzzle" />
+            <img
+              src="./image/Sudoku.png"
+              alt="Sudoku puzzle"
+              class="some-images"
+            />
+            <img
+              src="./image/diamond-rush.jpg"
+              alt="Diamond rush game"
+              class="some-images"
+            />
+            <img
+              src="./image/Bejeweled.jpg"
+              alt="bejeweled matching game"
+              class="some-images"
+            />
+            <img
+              src="./image/Maze-run.jpg"
+              alt="Maze-run puzzle"
+              class="some-images"
+            />
             <figcaption>
               Some of the logical games and puzzles I play
             </figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Cooking Websites</h2>
-          <p>Some of the websites I frequent</p>
-          <figure>
+        <article class="screen-size">
+          <h2 class="titles">Cooking Websites</h2>
+          <p class="screen-size">Some of the websites I frequent</p>
+          <figure class="screen-size image-cluster">
             <img
               src="./image/The-Best-Cooking-Websites.jpeg.webp"
               alt="Best looking foods"
+              class="some-images"
             />
             <img
               src="./image/Allrecipes-960x628.jpg.webp"
               alt="Allrecipies Website home page"
+              class="some-images"
             />
             <img
               src="./image/Food-Network--960x600.jpeg.webp"
               alt="Food network home page"
+              class="some-images"
             />
             <img
               src="./image/Taste-of-Home-960x1138.jpeg.webp"
               alt="Test of home home page"
+              class="some-images"
             />
             <img
               src="./image/Delish-960x628.jpeg.webp"
               alt="Delish website home page"
+              class="some-images"
             />
             <img
               src="./image/bbcgoodfood-960x1280.jpeg.webp"
               alt="bbc good food website home page"
+              class="some-images"
             />
             <figcaption>
               This are in no way food that I made they are just images
@@ -218,34 +300,38 @@
           </figure>
         </article>
 
-        <article>
-          <h2>Reading</h2>
-          <p>Some of the things I like to read</p>
-          <figure>
+        <article class="screen-size">
+          <h2 class="titles">Reading</h2>
+          <p class="screen-size">Some of the things I like to read</p>
+          <figure class="screen-size image-cluster">
             <img
               src="./image/Applied-math-1.jpg"
               alt="Applied-math-1 book cover"
+              class="some-images"
             />
             <img
               src="./image/Applied-math-2.jpg"
               alt="Applied-math-2 book cover"
+              class="some-images"
             />
             <img
               src="./image/Applied-math-3.jpg"
               alt="Applied-math-3 book cover"
+              class="some-images"
             />
             <img
               src="./image/Applied-Math-4.jpg"
               alt="Applied-math-4 book cover"
+              class="some-images"
             />
             <figcaption>Some Math books</figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Circutes</h2>
-          <p>Images I used in this website</p>
-          <figure>
+        <article class="screen-size">
+          <h2 class="titles">Circutes</h2>
+          <p class="screen-size">Images I used in this website</p>
+          <figure class="image-cluster grid-container">
             <img src="./image/circute-diagram.jpg" alt="Simple circute" />
             <img src="./image/complex-circute.jpg" alt="complex circute" />
             <figcaption>
@@ -255,9 +341,9 @@
         </article>
       </section>
 
-      <section>
-        <h2>Means of selection</h2>
-        <ul>
+      <section class="grid-container screen-size">
+        <h2 class="center-title closer">Means of selection</h2>
+        <ul class="grid-container screen-size put-center" id="selection">
           <li><input type="radio" name="select" value="Games" />Games</li>
           <li><input type="radio" name="select" value="Math" />Math</li>
           <li><input type="radio" name="select" value="Physics" />Physics</li>
@@ -271,46 +357,53 @@
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="grid-container screen-size three-to-one">
+      <section class="grid-container screen-size">
         <h2>Contact me</h2>
-        <nav>
+        <nav class="grid-container" id="some-sites">
           <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
+            ><img src="./image/telegram.png" alt="telegram" class="Normal-logo"
           /></a>
           <a
             href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
+            ><img src="./image/linkedin.png" alt="linkedin" class="Normal-logo"
           /></a>
           <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
+            ><img src="./image/lemlem.jpg" alt="lemlem" class="Normal-logo"
           /></a>
           <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
+            ><img src="./image/github.png" alt="GitHub" class="Normal-logo"
           /></a>
           <a
             href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
+            ><img src="./image/figma.jpg" alt="figma" class="Normal-logo"
           /></a>
           <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
+            ><img src="./image/discord.jpg" alt="discord" class="Normal-logo"
           /></a>
         </nav>
       </section>
 
-      <section>
+      <section class="grid-container screen-size">
         <h2>About me</h2>
-        <p>
+        <p class="text-item">
           My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
+          Addis Abeba University.
+        </p>
+        <p class="text-item">
+          My hobbies include solving problems on programming sites like
+          leetcode, hackerrank, and codeforces....
         </p>
         <a href="./profile.html">Show More >></a>
       </section>
 
-      <section>
+      <section class="grid-container screen-size">
         <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
+        <img
+          src="./image/image-icon.png"
+          alt="Profile picture"
+          class="profile-picture"
+        />
         <ul>
           <li>
             Email:
