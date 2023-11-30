@@ -1,3 +1,30 @@
+.corners {
+  background-color: #413b4a;
+  color: white;
+}
+
+.exception,
+.exception:visited {
+  color: blue;
+}
+
+a,
+a:visited {
+  color: #e8d5b5;
+}
+
+.light-back {
+  background-color: #fffade;
+}
+
+.dark-back {
+  background-color: #e8d5b5;
+}
+
+.my-top {
+  background-color: #bf94ff;
+}
+
 .closer {
   margin-bottom: -15px;
 }
@@ -70,6 +97,12 @@
 
 .profile-section > h3 {
   flex: 100%;
+}
+
+/* Profile */
+dt {
+  font-size: 20px;
+  margin: 10px;
 }
 
 /* Portfolio */
