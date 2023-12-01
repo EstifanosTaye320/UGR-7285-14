@@ -1,3 +1,30 @@
+.corners {
+  background-color: #413b4a;
+  color: white;
+}
+
+.exception,
+.exception:visited {
+  color: blue;
+}
+
+a,
+a:visited {
+  color: #e8d5b5;
+}
+
+.light-back {
+  background-color: #fffade;
+}
+
+.dark-back {
+  background-color: #e8d5b5;
+}
+
+.my-top {
+  background-color: #bf94ff;
+}
+
 .grid-container {
   display: grid;
   justify-content: center;
@@ -79,6 +106,12 @@
   border: 1px solid black;
 }
 
+/* Profile */
+dt {
+  font-size: 20px;
+  margin: 10px;
+}
+
 /* Portfolio */
 
 #sorting {
@@ -90,6 +123,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 15px;
 }
+
+/* Header, Footer and Contact-Me */
 
 #main-nav {
   padding-left: 0px;
