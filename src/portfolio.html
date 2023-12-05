@@ -8,31 +8,34 @@
   </head>
 
   <body>
-    <header class="grid-container screen-size two-to-one corners">
-      <hgroup class="closer">
-        <h1 class="closer" id="my-logo">
+    <header class="grid-container two-to-one corners">
+      <hgroup class="grid-container hgroup closer">
+        <h1 class="closer">
           <img src="./image/E-icon.jpg" alt="E-Logo" class="sizerated-logo" />
         </h1>
         <p>Estifanos Taye</p>
       </hgroup>
 
-      <ul class="grid-container" id="main-nav">
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./profile.html">Profile</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./scrap_book.html">Scrap Book</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
+      <div class="grid-container nav-container">
+        <ul class="grid-container" id="main-nav">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./scrap_book.html">Scrap Book</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
-    <main class="screen-size">
-      <div class="closer my-top screen-size grid-container">
+    <main>
+      <div class="closer my-top grid-container">
         <h1 class="closer">Portfolio</h1>
         <p>
           This are some of the projects that I have worked on over the years...
         </p>
       </div>
-      <section class="grid-container screen-size">
+
+      <section>
         <h2 class="center-title">Sorting</h2>
         <div class="grid-container" id="sorting">
           <label><input type="radio" name="sort" value="name" />By Name</label>
@@ -44,168 +47,168 @@
         </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <article class="grid-container image-cluster">
-          <h3>Calculator</h3>
+      <section class="grid-container" id="projects">
+        <h2 class="center-title">Projects</h2>
+        <article class="grid-container image-cluster card left-card">
+          <h3 class="card-title">Calculator</h3>
           <img
             src="./image/Calculator.jpg"
             alt="Calculator Image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             I have built a calculater using all of the programming languages I
             have learned so far (python, java, JavaScript, C#, and C++)
           </p>
         </article>
 
-        <article class="grid-container image-cluster light-back">
-          <h3>Slider</h3>
+        <article class="grid-container image-cluster light-back card left-card">
+          <h3 class="card-title">Slider</h3>
           <img
             src="./image/Slider.jpg"
             alt="Slider number range image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             I have made this project in java script to help me grasp the use of
             the output tag in html
           </p>
         </article>
 
-        <article class="grid-container image-cluster">
-          <h3>DataBase Research</h3>
+        <article class="grid-container image-cluster card left-card">
+          <h3 class="card-title">DataBase Research</h3>
           <img
             src="./image/database.jpg"
             alt="Database Image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This was a project I did for my networking course in my 2nd year
             education in AAiT
           </p>
         </article>
 
-        <article class="grid-container image-cluster light-back">
-          <h3>Madlibs Game</h3>
+        <article class="grid-container image-cluster light-back card left-card">
+          <h3 class="card-title">Madlibs Game</h3>
           <img
             src="./image/madlibs.jpg"
             alt="madlibs game image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This is like a kick of project for game programming which I have
             taken an interest in
           </p>
         </article>
 
-        <article class="grid-container image-cluster">
-          <h3>Pong Game</h3>
+        <article class="grid-container image-cluster card left-card">
+          <h3 class="card-title">Pong Game</h3>
           <img
             src="./image/pong.png"
             alt="Pong game image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This is a project I made in python to introduce me to the turtle
             package for game programming in python
           </p>
         </article>
 
-        <article class="grid-container image-cluster light-back">
-          <h3>Rock Paper Scissors Game</h3>
+        <article class="grid-container image-cluster light-back card left-card">
+          <h3 class="card-title">Rock Paper Scissors Game</h3>
           <img
             src="./image/rock-paper-scissors.png"
             alt="rock-paper-scissors game image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This was a project I worked on when I was learing how to use html,
             css and JavaScript together
           </p>
         </article>
 
-        <article class="grid-container image-cluster">
+        <article class="grid-container image-cluster card left-card">
           <h3>Snake Game</h3>
           <img
             src="./image/Snake.jpg"
             alt="Snake Game image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This was a project I made to help me take on game programming in
             python using the pygame library
           </p>
         </article>
 
-        <article class="grid-container image-cluster light-back">
-          <h3>Tic Tac Toe Game</h3>
+        <article class="grid-container image-cluster light-back card left-card">
+          <h3 class="card-title">Tic Tac Toe Game</h3>
           <img
             src="./image/tic-tac-toe.png"
             alt="Tic Tac Toe Game image"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This was one of the projects I used to learn how to use html, css
             and JavaScript together
           </p>
         </article>
 
-        <article class="grid-container image-cluster">
-          <h3>Robot Programming</h3>
+        <article class="grid-container image-cluster card left-card">
+          <h3 class="card-title">Robot Programming</h3>
           <img
             src="./image/robot-programming.jpg"
             alt="robot programming"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             The objective of this project was to make a NAO Robot read out some
             Ethiopian stories to children
           </p>
         </article>
 
-        <article class="grid-container image-cluster light-back">
-          <h3>Slot machine using JavaScript</h3>
-          <p>
+        <article class="grid-container image-cluster light-back card left-card">
+          <h3 class="card-title">Slot machine using JavaScript</h3>
+          <p class="card-text">
             This project was made in an effert to learn some thing about
             programming in JavaScript
           </p>
           <img
             src="./image/slot-machine.jpg"
             alt="slot-machine"
-            class="some-images"
+            class="some-images card-image"
           />
         </article>
 
-        <article class="grid-container image-cluster">
-          <h3>Encryption software</h3>
+        <article class="grid-container image-cluster card left-card">
+          <h3 class="card-title">Encryption software</h3>
           <img
             src="./image/encryption.jpg"
             alt="Encryption process"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             This was done in my data structure course at the end of the 2nd year
             of my education at AAiT of Addis Ababa
           </p>
         </article>
 
-        <article class="grid-container image-cluster light-back">
-          <h3>Gen AI A2SV</h3>
+        <article class="grid-container image-cluster card left-card light-back">
+          <h3 class="card-title">Gen AI A2SV</h3>
           <img
             src="./image/A2SV-logo.jpg"
             alt="A2SV logo"
-            class="some-images"
+            class="some-images card-image"
           />
-          <p>
+          <p class="card-text">
             Here was a project the required the use of an AI to generate code
             for an educational application that was agreed upon by my team
           </p>
         </article>
       </section>
 
-      <section class="grid-container">
+      <section>
         <h2 class="center-title closer">Means of selection</h2>
-        <ul class="grid-container screen-size put-center" id="selection">
+        <ul class="grid-container put-center" id="selection">
           <li><input type="radio" name="select" value="Games" />Games</li>
           <li><input type="radio" name="select" value="Math" />Math</li>
           <li><input type="radio" name="select" value="Physics" />Physics</li>
@@ -219,8 +222,8 @@
       </section>
     </main>
 
-    <footer class="grid-container screen-size three-to-one corners">
-      <section class="grid-container screen-size">
+    <footer class="grid-container three-to-one corners">
+      <section class="grid-container">
         <h2>Contact me</h2>
         <nav class="grid-container" id="some-sites">
           <a href="https://t.me/Elgeneral1"
@@ -246,7 +249,7 @@
         </nav>
       </section>
 
-      <section class="grid-container screen-size">
+      <section class="grid-container">
         <h2>About me</h2>
         <p class="text-item">
           My name is Estifanos Taye am a 3rd year Software student at AAiT of
@@ -259,7 +262,7 @@
         <a href="./profile.html">Show More >></a>
       </section>
 
-      <section class="grid-container screen-size image-cluster">
+      <section class="grid-container image-cluster">
         <h2>My information</h2>
         <img
           src="./image/image-icon.png"
