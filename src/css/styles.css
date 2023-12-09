@@ -1,45 +1,47 @@
-.corners {
+.logo {
+  border: 1px solid blue;
+  border-radius: 100%;
+}
+
+.sizerated-logo {
+  width: 100px;
+}
+
+.Normal-logo {
+  width: 75px;
+}
+
+.radio-buttons {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.radio-buttons-padding {
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.black-background {
   background-color: #413b4a;
-  color: white;
 }
 
-.exception,
-.exception:visited {
-  color: blue;
+.purple-background {
+  background: linear-gradient(purple, rgb(201, 57, 201));
 }
 
-a,
-a:visited {
-  color: #e8d5b5;
+.light-background {
+  background: linear-gradient(#fffade, lightblue);
 }
 
-.light-back {
-  background-color: #fffade;
-}
-
-.my-top {
-  background-color: #bf94ff;
+.grid {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  align-content: start;
 }
 
 .grid-container {
-  display: grid;
-  justify-content: center;
-  align-content: start;
   justify-items: center;
   align-items: start;
-  gap: 5px;
-}
-
-.three-to-one {
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-}
-
-.respond {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.closer {
-  margin-bottom: -15px;
 }
 
 .titles {
@@ -47,19 +49,86 @@ a:visited {
   justify-content: start;
 }
 
-.site-card {
+.center-title {
+  text-align: center;
+  justify-content: start;
+}
+
+.put-center {
+  justify-items: center;
+  justify-content: center;
+}
+
+.respond-large {
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+
+.respond-small {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.main-nav {
+  grid-template-columns: repeat(3, 1fr) 3fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0px;
+  list-style-type: none;
+  width: 300px;
+}
+
+.some-sites {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 250px;
+}
+
+.google-maps {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.scrap-collections {
+  grid-template-columns: 1fr;
+}
+
+.some-images {
+  width: clamp(200px, 100%, 500px);
+}
+
+.scrap-images {
+  width: clamp(200px, 50%, 50%);
+}
+
+.profile-picture {
+  width: 200px;
+}
+
+.image-cluster {
   gap: 5px;
 }
 
-.sizerated-logo,
-.Normal-logo {
-  border: 1px solid blue;
-  border-radius: 100%;
-  width: 100px;
+.image-cluster > img {
+  border: 1px solid black;
 }
 
-.Normal-logo {
-  width: 75px;
+.white-text {
+  color: white;
+}
+
+a,
+a:visited {
+  color: #e8d5b5;
+}
+
+.exception,
+.exception:visited {
+  color: blue;
+}
+
+.closer {
+  margin-bottom: -15px;
+}
+
+.site-card {
+  gap: 5px;
 }
 
 .text-item {
@@ -71,85 +140,20 @@ a:visited {
   text-align: center;
 }
 
-.profile-picture {
-  width: 200px;
-}
-
-.some-images {
-  width: 400px;
-}
-
-.center-title {
+.main-nav > li {
   text-align: center;
-  justify-content: start;
-}
-
-.put-center {
-  justify-content: center;
-  justify-items: start;
-}
-
-.image-cluster {
-  gap: 5px;
-}
-
-.image-cluster > img {
-  border: 1px solid black;
-}
-
-/* Profile */
-dt {
-  font-size: 20px;
-  margin: 10px;
-}
-
-/* Portfolio */
-
-#sorting {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#selection {
-  list-style-type: none;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 15px;
-  border: 1px solid black;
-}
-
-/* Header, Footer and Contact-Me */
-
-#main-nav {
-  padding-left: 0px;
-  padding-right: 0px;
-  list-style-type: none;
-  width: 320px;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 1fr) 2fr 1fr;
-}
-
-#main-nav > li {
-  padding-left: 2.5px;
-  padding-right: 2.5px;
   border: 1px solid black;
   height: 25px;
 }
 
-#some-sites {
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#some-sites {
-  width: 250px;
-}
-
-#google-maps {
-  grid-template-columns: 1fr 1fr;
-}
-
-#google-maps > img {
-  width: 210px;
+.google-maps > img {
+  width: 100%;
   border: 1px solid black;
+}
+
+dt {
+  font-size: 20px;
+  margin: 10px;
 }
 
 @media (width > 480px) {
@@ -161,9 +165,9 @@ dt {
   }
 
   .hgroup {
-    /* border: 1px solid black; */
     justify-content: start;
     padding: 0% 10%;
+    font-size: 25px;
   }
 
   .nav-container {
@@ -176,13 +180,12 @@ dt {
     order: -1;
   }
 
-  /* ///////////////////////////////// */
-
   .card {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.1fr 1fr;
     gap: 10px;
   }
+
   .left-card {
     grid-template-areas:
       "image title"
@@ -206,6 +209,4 @@ dt {
   .card-text {
     grid-area: text;
   }
-
-  /* ///////////////////////////////// */
 }
