@@ -151,6 +151,16 @@ a:visited {
   border: 1px solid black;
 }
 
+.hidden {
+  display: none;
+}
+
+#message {
+  margin: 20px 0px;
+  color: red;
+  font-size: 30px;
+}
+
 dt {
   font-size: 20px;
   margin: 10px;
