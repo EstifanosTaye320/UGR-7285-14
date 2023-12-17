@@ -4,187 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
   </head>
   <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
-        <p>Estifanos Taye</p>
-      </hgroup>
-
-      <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./profile.html">Profile</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./scrap_book.html">Scrap Book</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </header>
+    <my-header></my-header>
 
     <main>
-      <h1>About me</h1>
+      <h1 class="title has-text-centered">About me</h1>
       <section>
-        <h2>My Hobbies</h2>
+        <h2 class="title has-text-centered is-size-3">My Hobbies</h2>
 
-        <article>
-          <h3>Codeing projects</h3>
-          <img
-            src="./image/Programming-a-project.jpg"
-            alt="programming picture"
-          />
-          <p>
-            This is what I do when I have free time at home I come up with some
-            project ideas on my own and start to code them out using proper
-            software engineering procedures.
-          </p>
+        <article class="has-background-light columns">
+          <div class="column is-one-third is-flex is-justify-content-center">
+            <img
+              src="./image/Programming-a-project.jpg"
+              alt="programming picture"
+            />
+          </div>
+          <div
+            class="column is-two-third is-flex-tablet is-align-content-end is-flex-direction-column"
+          >
+            <h3 class="title has-text-centered is-size-4">Codeing projects</h3>
+            <p>
+              This is what I do when I have free time at home I come up with
+              some project ideas on my own and start to code them out using
+              proper software engineering procedures.
+            </p>
+          </div>
         </article>
 
-        <article>
-          <h3>Playing logic games</h3>
-          <img src="./image/logic-games.jpg" alt="running brain" />
-          <p>
-            This is an activity reserved for when the light is out at the house
-            or when it is lunch time at school and I have nothing better to do.
-          </p>
+        <article class="columns">
+          <div class="column is-two-third">
+            <h3 class="title has-text-centered is-size-4">
+              Playing logic games
+            </h3>
+            <p>
+              This is an activity reserved for when the light is out at the
+              house or when it is lunch time at school and I have nothing better
+              to do.
+            </p>
+          </div>
+          <div class="column is-one-third is-flex is-justify-content-center">
+            <img src="./image/logic-games.jpg" alt="running brain" />
+          </div>
         </article>
 
-        <article>
-          <h3>Playing video games</h3>
-          <img src="./image/video-games.jpg" alt="running brain" />
-          <p>
-            When I have the time I try some video games to see how they work and
-            what types of things are possible to do now a days.
-          </p>
+        <article class="has-background-light columns">
+          <div class="column is-one-third is-flex is-justify-content-center">
+            <img src="./image/video-games.jpg" alt="running brain" />
+          </div>
+          <div
+            class="column is-two-third is-flex-tablet is-align-content-end is-flex-direction-column"
+          >
+            <h3 class="title has-text-centered is-size-4">
+              Playing video games
+            </h3>
+            <p>
+              When I have the time I try some video games to see how they work
+              and what types of things are possible to do now a days.
+            </p>
+          </div>
         </article>
 
-        <a href="./profile.html#Hobbies">More >></a>
+        <a
+          href="./profile.html#Hobbies"
+          class="is-flex is-justify-content-center"
+          >More >></a
+        >
       </section>
 
       <section>
-        <h2>My Best Projects</h2>
-        <h3>High School</h3>
+        <h2 class="title has-text-centered is-size-3">My Best Projects</h2>
+        <h3 class="title has-text-centered is-size-4">High School</h3>
 
         <article>
-          <h4>Electrical circute project (Physics Club)</h4>
-          <p>
-            This project started small and built up to a more complex project,
-            designs of the project can be more or less illustrated as in the
-            following images:
-          </p>
-          <figure>
-            <img src="./image/circute-diagram.jpg" alt="Simple Circute" />
-            <figcaption>
-              Depiction of the starting point of the project
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="./image/complex-circute.jpg" alt="Complex circute" />
-            <figcaption>Depiction of the end of the project</figcaption>
-          </figure>
-
-          <article>
-            <h4>Research for Geography club</h4>
-            <img src="./image/volcano.jpg" alt="volcano-image" />
-            <p>
-              The research I was instructed to do was on the behaviour of
-              volcanos, types of volcanos and some of the after effects of a
-              volcanic eruption
-            </p>
+          <article class="columns">
+            <div class="column is-one-third columns">
+              <figure
+                class="column is-half is-flex is-flex-direction-column is-align-items-center"
+              >
+                <img src="./image/circute-diagram.jpg" alt="Simple Circute" />
+                <figcaption>
+                  Depiction of the starting point of the project
+                </figcaption>
+              </figure>
+              <figure
+                class="column is-half is-flex is-flex-direction-column is-align-items-center"
+              >
+                <img src="./image/complex-circute.jpg" alt="Complex circute" />
+                <figcaption>Depiction of the end of the project</figcaption>
+              </figure>
+            </div>
+            <div
+              class="column is-two-third is-flex-tablet is-align-content-end is-flex-direction-column"
+            >
+              <h4 class="title has-text-centered is-size-5">
+                Electrical circute project (Physics Club)
+              </h4>
+              <p>
+                This project started small and built up to a more complex
+                project, designs of the project can be more or less illustrated
+                as in the following images:
+              </p>
+            </div>
           </article>
 
-          <h3>Free Time</h3>
-          <article>
-            <h4>Robot Programming</h4>
-            <img src="./image/robot-programming.jpg" alt="robot programming" />
-            <p>
-              The objective of this project was to make a NAO Robot read out
-              some Ethiopian stories to children
-            </p>
+          <article class="has-background-light columns">
+            <div class="column is-one-third is-flex is-justify-content-center">
+              <img src="./image/volcano.jpg" alt="volcano-image" />
+            </div>
+            <div
+              class="column is-two-third is-flex-tablet is-align-content-end is-flex-direction-column"
+            >
+              <h4 class="title has-text-centered is-size-5">
+                Research for Geography club
+              </h4>
+              <p>
+                The research I was instructed to do was on the behaviour of
+                volcanos, types of volcanos and some of the after effects of a
+                volcanic eruption
+              </p>
+            </div>
           </article>
 
-          <article>
-            <h4>Slot machine using JavaScript</h4>
-            <p>
-              This project was made in an effert to learn some thing about
-              programming in JavaScript
-            </p>
-            <img src="./image/slot-machine.jpg" alt="slot-machine" />
+          <h3 class="title has-text-centered is-size-4">Free Time</h3>
+          <article class="columns">
+            <div class="column is-two-third">
+              <h4 class="title has-text-centered is-size-5">
+                Robot Programming
+              </h4>
+              <p>
+                The objective of this project was to make a NAO Robot read out
+                some Ethiopian stories to children
+              </p>
+            </div>
+
+            <div
+              class="column is-one-third is-flex-mobile is-justify-content-center"
+            >
+              <img
+                src="./image/robot-programming.jpg"
+                alt="robot programming"
+              />
+            </div>
           </article>
 
-          <h3>At Collage</h3>
-          <article>
-            <h4>Encryption software</h4>
-            <img src="./image/encryption.jpg" alt="Encryption process" />
-            <p>
-              This was done in my data structure course at the end of the 2nd
-              year of my education at AAiT of Addis Ababa
-            </p>
+          <article class="columns has-background-light">
+            <div class="column is-two-third">
+              <h4 class="title has-text-centered is-size-5">
+                Slot machine using JavaScript
+              </h4>
+              <p>
+                This project was made in an effert to learn some thing about
+                programming in JavaScript
+              </p>
+            </div>
+            <div
+              class="column is-one-third is-flex-mobile is-justify-content-center"
+            >
+              <img src="./image/slot-machine.jpg" alt="slot-machine" />
+            </div>
           </article>
 
-          <article>
-            <h4>Gen AI A2SV</h4>
-            <img src="./image/A2SV-logo.jpg" alt="A2SV logo" />
-            <p>
-              Here was a project the required the use of an AI to generate code
-              for an educational application that was agreed upon by my team
-            </p>
+          <h3 class="title has-text-centered is-size-4">At Collage</h3>
+          <article class="columns">
+            <div
+              class="column is-one-third is-flex-mobile is-justify-content-center"
+            >
+              <img src="./image/encryption.jpg" alt="Encryption process" />
+            </div>
+
+            <div
+              class="column is-two-third is-flex-tablet is-align-content-end is-flex-direction-column"
+            >
+              <h4 class="title has-text-centered is-size-5">
+                Encryption software
+              </h4>
+              <p>
+                This was done in my data structure course at the end of the 2nd
+                year of my education at AAiT of Addis Ababa
+              </p>
+            </div>
           </article>
-          <a href="./portfolio.html#projects">More >></a>
+
+          <article class="columns has-background-light">
+            <div
+              class="column is-one-third is-flex-mobile is-justify-content-center"
+            >
+              <img src="./image/A2SV-logo.jpg" alt="A2SV logo" />
+            </div>
+            <div
+              class="column is-two-third is-flex-tablet is-align-content-end is-flex-direction-column"
+            >
+              <h4 class="title has-text-centered is-size-5">Gen AI A2SV</h4>
+              <p>
+                Here was a project the required the use of an AI to generate
+                code for an educational application that was agreed upon by my
+                team
+              </p>
+            </div>
+          </article>
+          <a
+            href="./portfolio.html#projects"
+            class="is-flex is-justify-content-center"
+            >More >></a
+          >
         </article>
       </section>
     </main>
 
-    <footer>
-      <section>
-        <h2>Contact me</h2>
-        <nav>
-          <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
-          /></a>
-          <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
-          /></a>
-          <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
-          /></a>
-          <a
-            href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
-          /></a>
-          <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
-          /></a>
-        </nav>
-      </section>
+    <my-footer></my-footer>
 
-      <section>
-        <h2>About me</h2>
-        <p>
-          My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
-        </p>
-        <a href="./profile.html">Show More >></a>
-      </section>
-
-      <section>
-        <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:estifanostaye11@gmail.com"
-              >estifanostaye11@gmail.com</a
-            >
-          </li>
-          <li>Phone Number: 0925353945</li>
-          <li>ID Number: UGR/7285/14</li>
-        </ul>
-      </section>
-    </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
