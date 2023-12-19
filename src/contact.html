@@ -4,37 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
-        <p>Estifanos Taye</p>
-      </hgroup>
-
-      <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./profile.html">Profile</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./scrap_book.html">Scrap Book</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </header>
+    <my-header></my-header>
 
     <main>
-      <h1>Contact information</h1>
-      <section>
-        <h2>Location</h2>
-        <figure>
-          <img src="./image/home.jpg" alt="home" title="Home" />
-          <img src="./image/school.jpg" alt="school" title="School" />
+      <p id="message"></p>
+      <h1 class="text-3xl font-bold">Contact information</h1>
+      <h2 class="text-2xl font-bold mt-3">Location</h2>
+      <section class="grid md:grid-cols-3">
+        <figure
+          class="md:col-span-2 grid grid-cols-2 lg:grid-cols-3 justify-items-center md:order-last"
+        >
+          <img src="./image/home.jpg" alt="home" title="Home" class="m-2" />
+          <img
+            src="./image/school.jpg"
+            alt="school"
+            title="School"
+            class="m-2"
+          />
           <img
             src="./image/Goethe-Institut.jpg"
             alt="Goethe"
             title="Goethe Institut"
+            class="m-2"
           />
         </figure>
-        <ul>
+        <ul class="grid justify-items-center content-center">
           <li>
             Eyesus 41: Where I live
             <a
@@ -59,70 +56,100 @@
         </ul>
       </section>
 
-      <section>
-        <h2>My Information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:estifanostaye11@gmail.com"
-              >estifanostaye11@gmail.com</a
-            >
-          </li>
-          <li>Phone Number: 0925353945</li>
-          <li>ID Number: UGR/7285/14</li>
-        </ul>
+      <section class="bg-slate-200">
+        <h2 class="text-2xl font-bold mt-3">My Information</h2>
+        <div class="grid md:grid-cols-2 justify-items-center items-center">
+          <img src="./image/image-icon.png" alt="Profile picture" class="" />
+          <ul class="grid justify-items-center">
+            <li>
+              Email:
+              <a href="mailto:estifanostaye11@gmail.com"
+                >estifanostaye11@gmail.com</a
+              >
+            </li>
+            <li>Phone Number: 0925353945</li>
+            <li>ID Number: UGR/7285/14</li>
+          </ul>
+        </div>
       </section>
 
       <section>
-        <h2>Other Sites</h2>
-        <figure>
-          <article>
-            <h3>Telegram</h3>
-            <a href="https://t.me/Elgeneral1"
-              ><img src="./image/telegram.png" alt="telegram"
+        <h2 class="text-2xl font-bold mt-3">Other Sites</h2>
+        <figure class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <article class="grid grid-row-3 justify-items-center">
+            <h3 class="text-xl font-bold">Telegram</h3>
+            <a
+              href="https://t.me/Elgeneral1"
+              class="is-flex is-justify-content-center"
+              ><img
+                src="./image/telegram.png"
+                alt="telegram"
+                class="m-2 rounded-full"
             /></a>
             <p>For most of my online communications</p>
           </article>
 
-          <article>
-            <h3>Linkedin</h3>
+          <article class="grid grid-row-3 justify-items-center">
+            <h3 class="text-xl font-bold">Linkedin</h3>
             <a
+              class="is-flex is-justify-content-center"
               href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-              ><img src="./image/linkedin.png" alt="linkedin"
+              ><img
+                src="./image/linkedin.png"
+                alt="linkedin"
+                class="m-2 rounded-full"
             /></a>
             <p>Where I communicate my achievements, if any</p>
           </article>
 
-          <article>
-            <h3>Lemlem School</h3>
-            <a href="https://www.lemlemschool.com/"
-              ><img src="./image/lemlem.jpg" alt="lemlem"
+          <article class="grid grid-row-3 justify-items-center">
+            <h3 class="text-xl font-bold">Lemlem School</h3>
+            <a
+              class="is-flex is-justify-content-center"
+              href="https://www.lemlemschool.com/"
+              ><img
+                src="./image/lemlem.jpg"
+                alt="lemlem"
+                class="m-2 rounded-full"
             /></a>
             <p>Location where I took my High school education</p>
           </article>
 
-          <article>
-            <h3>GitHub</h3>
-            <a href="https://github.com/EstifanosTaye320"
-              ><img src="./image/github.png" alt="GitHub"
+          <article class="grid grid-row-3 justify-items-center">
+            <h3 class="text-xl font-bold">GitHub</h3>
+            <a
+              class="is-flex is-justify-content-center"
+              href="https://github.com/EstifanosTaye320"
+              ><img
+                src="./image/github.png"
+                alt="GitHub"
+                class="m-2 rounded-full"
             /></a>
             <p>Where I keep track of and work on my projects</p>
           </article>
 
-          <article>
-            <h3>Figma</h3>
+          <article class="grid grid-row-3 justify-items-center">
+            <h3 class="text-xl font-bold">Figma</h3>
             <a
+              class="is-flex is-justify-content-center"
               href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-              ><img src="./image/figma.jpg" alt="figma"
+              ><img
+                src="./image/figma.jpg"
+                alt="figma"
+                class="m-2 rounded-full"
             /></a>
             <p>Where I do most of my disigning</p>
           </article>
 
-          <article>
-            <h3>Discord</h3>
-            <a href="https://discord.com/channels/@me"
-              ><img src="./image/discord.jpg" alt="discord"
+          <article class="grid grid-row-3 justify-items-center">
+            <h3 class="text-xl font-bold">Discord</h3>
+            <a
+              class="is-flex is-justify-content-center"
+              href="https://discord.com/channels/@me"
+              ><img
+                src="./image/discord.jpg"
+                alt="discord"
+                class="m-2 rounded-full"
             /></a>
             <p>Another communication platforms I make use of</p>
           </article>
@@ -130,57 +157,8 @@
       </section>
     </main>
 
-    <footer>
-      <section>
-        <h2>Contact me</h2>
-        <nav>
-          <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
-          /></a>
-          <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
-          /></a>
-          <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
-          /></a>
-          <a
-            href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
-          /></a>
-          <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
-          /></a>
-        </nav>
-      </section>
+    <my-footer></my-footer>
 
-      <section>
-        <h2>About me</h2>
-        <p>
-          My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
-        </p>
-        <a href="./profile.html">Show More >></a>
-      </section>
-
-      <section>
-        <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:estifanostaye11@gmail.com"
-              >estifanostaye11@gmail.com</a
-            >
-          </li>
-          <li>Phone Number: 0925353945</li>
-          <li>ID Number: UGR/7285/14</li>
-        </ul>
-      </section>
-    </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
