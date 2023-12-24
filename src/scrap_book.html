@@ -4,31 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scrap Book</title>
+    <link rel="stylesheet" href="dist/bootstrap.css" />
+    <link rel="stylesheet" href="dist/bootstrap.min.css" />
   </head>
   <body>
-    <header>
-      <hgroup>
-        <h1><img src="./image/E-icon.jpg" alt="E-Logo" /></h1>
-        <p>Estifanos Taye</p>
-      </hgroup>
-
-      <ul>
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./profile.html">Profile</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./scrap_book.html">Scrap Book</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </header>
+    <my-header></my-header>
 
     <main>
-      <h1>My Scrap Book</h1>
-      <section>
-        <h2>My Collection</h2>
-        <article>
-          <h2>Video Games</h2>
-          <p>Here are some images related to my gameing habbits</p>
-          <figure>
+      <h1 class="text-center">My Scrap Book</h1>
+
+      <section id="listing-area">
+        <h2 class="text-center">My Collection</h2>
+        <p class="text-center h4 text-danger" id="message">
+          Sorry, Nothing to show here
+        </p>
+        <article class="game all flex-column my-3">
+          <h2 class="text-center">Video Games</h2>
+          <p class="text-center">
+            Here are some images related to my gameing habbits
+          </p>
+          <figure class="d-flex justify-content-center flex-wrap">
             <img
               src="./image/Assassin's-Creed.jpg"
               alt="Assassin's Creed logo"
@@ -39,15 +34,17 @@
             <img src="./image/crysis-logo.jpg" alt="Crysis logo" />
             <img src="./image/dragon-age-logo.jpg" alt="Dragon Age logo" />
             <img src="./image/GTA-logo.png" alt="GTA logo" />
-            <figcaption>Some of my most favorite games to play</figcaption>
+            <figcaption class="text-center w-100">
+              Some of my most favorite games to play
+            </figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Some simple projects</h2>
+        <article class="bg-light border other all flex-column my-3">
+          <h2 class="text-center">Some simple projects</h2>
           <figure>
-            <pre>
-              <code>
+            <pre class="m-3 d-grid justify-content-center">
+              <code class="overflow-hidden">
                 const slotMachine = () => {
                   const items = ["🍒", "🍊", "🍇", "🍉", "🍋", "🍎"];
                   const item1 = items[Math.floor(Math.random() * items.length)];
@@ -63,7 +60,7 @@
                 /* Slot Mechine code for learning JavaSrcipt */
               </code>
 
-              <code>
+              <code class="overflow-hidden">
                 import heapq
                 from collections import defaultdict
 
@@ -114,7 +111,7 @@
                   Huffman coding for learning python data structures
                 """
               </code>
-              <code>
+              <code class="overflow-hidden">
                 import heapq
                 from collections import defaultdict
 
@@ -159,15 +156,15 @@
                 """
               </code>
             </pre>
-            <figcaption>
+            <figcaption class="text-center">
               Some of the simplest projects I have worked on
             </figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Puzzles and logic Games</h2>
-          <figure>
+        <article class="game all flex-column my-3">
+          <h2 class="text-center">Puzzles and logic Games</h2>
+          <figure class="m-3 d-flex justify-content-center flex-wrap">
             <img src="./image/Matches.png" alt="Matches Phone game" />
             <img src="./image/Odd-Key.png" alt="Find add key puzzle" />
             <img
@@ -178,16 +175,16 @@
             <img src="./image/diamond-rush.jpg" alt="Diamond rush game" />
             <img src="./image/Bejeweled.jpg" alt="bejeweled matching game" />
             <img src="./image/Maze-run.jpg" alt="Maze-run puzzle" />
-            <figcaption>
+            <figcaption class="text-center w-100">
               Some of the logical games and puzzles I play
             </figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Cooking Websites</h2>
-          <p>Some of the websites I frequent</p>
-          <figure>
+        <article class="bg-light border other all flex-column my-3">
+          <h2 class="text-center">Cooking Websites</h2>
+          <p class="text-center">Some of the websites I frequent</p>
+          <figure class="m-3 d-flex justify-content-center flex-wrap">
             <img
               src="./image/The-Best-Cooking-Websites.jpeg.webp"
               alt="Best looking foods"
@@ -212,16 +209,16 @@
               src="./image/bbcgoodfood-960x1280.jpeg.webp"
               alt="bbc good food website home page"
             />
-            <figcaption>
+            <figcaption class="text-center w-100">
               This are in no way food that I made they are just images
             </figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Reading</h2>
-          <p>Some of the things I like to read</p>
-          <figure>
+        <article class="math all flex-column my-3">
+          <h2 class="text-center">Reading</h2>
+          <p class="text-center">Some of the things I like to read</p>
+          <figure class="m-3 d-flex justify-content-center flex-wrap">
             <img
               src="./image/Applied-math-1.jpg"
               alt="Applied-math-1 book cover"
@@ -238,90 +235,28 @@
               src="./image/Applied-Math-4.jpg"
               alt="Applied-math-4 book cover"
             />
-            <figcaption>Some Math books</figcaption>
+            <figcaption class="text-center w-100">Some Math books</figcaption>
           </figure>
         </article>
 
-        <article>
-          <h2>Circutes</h2>
-          <p>Images I used in this website</p>
-          <figure>
+        <article class="bg-light border physics all flex-column my-3">
+          <h2 class="text-center">Circutes</h2>
+          <p class="text-center">Images I used in this website</p>
+          <figure class="m-3 d-flex justify-content-center flex-wrap">
             <img src="./image/circute-diagram.jpg" alt="Simple circute" />
             <img src="./image/complex-circute.jpg" alt="complex circute" />
-            <figcaption>
+            <figcaption class="w-100 text-center">
               Images I used to illustrate my high school circutes project
             </figcaption>
           </figure>
         </article>
       </section>
 
-      <section>
-        <h2>Means of selection</h2>
-        <ul>
-          <li><input type="radio" name="select" value="Games" />Games</li>
-          <li><input type="radio" name="select" value="Math" />Math</li>
-          <li><input type="radio" name="select" value="Physics" />Physics</li>
-          <li><input type="radio" name="select" value="Time" />Time</li>
-          <li>
-            <input type="radio" name="select" value="Other Reading" />Other
-            Reading
-          </li>
-          <li><input type="radio" name="select" value="All" checked />All</li>
-        </ul>
-      </section>
+      <my-selection></my-selection>
     </main>
 
-    <footer>
-      <section>
-        <h2>Contact me</h2>
-        <nav>
-          <a href="https://t.me/Elgeneral1"
-            ><img src="./image/telegram.png" alt="telegram"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/estifanos-taye-24b917288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bks55i7scS5yjGwT8NOViUQ%3D%3D"
-            ><img src="./image/linkedin.png" alt="linkedin"
-          /></a>
-          <a href="https://www.lemlemschool.com/"
-            ><img src="./image/lemlem.jpg" alt="lemlem"
-          /></a>
-          <a href="https://github.com/EstifanosTaye320"
-            ><img src="./image/github.png" alt="GitHub"
-          /></a>
-          <a
-            href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1304515570725595342"
-            ><img src="./image/figma.jpg" alt="figma"
-          /></a>
-          <a href="https://discord.com/channels/@me"
-            ><img src="./image/discord.jpg" alt="discord"
-          /></a>
-        </nav>
-      </section>
+    <my-footer></my-footer>
 
-      <section>
-        <h2>About me</h2>
-        <p>
-          My name is Estifanos Taye am a 3rd year Software student at AAiT of
-          Addis Abeba University, my hobbies include solving problems on
-          programming sites like leetcode, hackerrank, and codeforces....
-        </p>
-        <a href="./profile.html">Show More >></a>
-      </section>
-
-      <section>
-        <h2>My information</h2>
-        <img src="./image/image-icon.png" alt="Profile picture" />
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:estifanostaye11@gmail.com"
-              >estifanostaye11@gmail.com</a
-            >
-          </li>
-          <li>Phone Number: 0925353945</li>
-          <li>ID Number: UGR/7285/14</li>
-        </ul>
-      </section>
-    </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
